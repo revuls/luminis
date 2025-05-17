@@ -1,0 +1,22 @@
+{
+  "name": "luminis",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@vaadin/router": "^2.0.0",
+    "lit": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "prettier": "^2.5.1",
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.0"
+  }
+}
