@@ -1,50 +1,54 @@
 # 🌟 Luminis
 
-**Luminis** es una aplicación web progresiva (PWA) construida con [Lit](https://lit.dev/), [Vite](https://vitejs.dev/), y [Vaadin Router](https://vaadin.com/router). Está pensada para ser rápida, modular, y escalable, con navegación fluida y estilo limpio.
+**Luminis** is a Progressive Web App (PWA) built with [Lit](https://lit.dev/), [Vite](https://vitejs.dev/), and [Vaadin Router](https://vaadin.com/router). It's designed to be fast, modular, and scalable, with smooth navigation and clean styling.
 
 ![Luminis logo](./src/assets/icons/luminis-logo.png)
 
 ---
 
-## 🚀 Características
+## 🚀 Features
 
-- ⚡️ Renderizado rápido con **LitElement**
-- 🌐 Navegación SPA con **Vaadin Router**
-- 🎨 Estilos globales y scoped
-- 📱 Listo para instalar como **PWA**
-- 🌈 Transiciones suaves entre páginas
-- 🧭 Componente de navegación reutilizable
+- ⚡️ Fast rendering with **LitElement**
+- 🌐 SPA navigation with **Vaadin Router**
+- 🎨 Global and scoped CSS styling
+- 📱 Installable as a **PWA**
+- 🌈 Smooth page transitions
+- 🧭 Reusable navigation component
 
 ---
 
-## 🗂️ Estructura del proyecto
+## 🗂️ Project Structure
 
 ```
 src/
-├── assets/icons/           → Iconos y logos
-├── components/             → Componentes y páginas Lit
-│   ├── app.js              → App principal
-│   ├── home-page.js        → Página de inicio
-│   ├── about-page.js       → Página "Acerca de"
-│   ├── product-page.js     → Página de producto
-│   └── NavBar.js           → Componente de navegación
-├── router.js               → Configuración de rutas
-├── styles.css              → Estilos globales
-├── index.html              → HTML principal
-├── manifest.webmanifest    → Manifest PWA
-vite.config.js              → Configuración de Vite
+├── assets/
+│   ├── icons/                → Icons and logos
+│   ├── styles/               → CSS styles folder
+│   │   ├── global.css        → Global styles
+├── components/               → Lit components and pages
+│   ├── pages/                → Lit pages
+│   │   ├── home-page.js      → Home page example
+│   │   ├── about-page.js     → About page example
+│   │   ├── product-page.js   → Product page example with route params
+│   ├── shared/               → Shared Lit components
+│   │   └── NavBar.js         → Navigation component example
+├── app.js                    → Main app entry point
+├── router/index.js           → Router configuration
+├── index.html                → Main HTML file
+├── manifest.webmanifest      → PWA manifest
+vite.config.js                → Vite configuration
 ```
 
 ---
 
-## 🛠️ Requisitos
+## 🛠️ Requirements
 
 - Node.js >= 18
 - npm >= 8
 
 ---
 
-## 📦 Instalación
+## 📦 Installation
 
 ```bash
 npm install
@@ -52,27 +56,27 @@ npm install
 
 ---
 
-## 🧪 Desarrollo
+## 🧪 Development
 
 ```bash
 npm run dev
 ```
 
-Esto lanzará la app en [http://localhost:5173](http://localhost:5173).
+This will start the app at [http://localhost:5173](http://localhost:5173).
 
 ---
 
-## 🏗️ Build para producción
+## 🏗️ Production Build
 
 ```bash
 npm run build
 ```
 
-Archivos optimizados en la carpeta `/dist`.
+Optimized files will be generated in the `/dist` folder.
 
 ---
 
-## 🔍 Vista previa del build
+## 🔍 Preview Build
 
 ```bash
 npm run serve
@@ -82,24 +86,24 @@ npm run serve
 
 ## 📱 PWA
 
-La app incluye un `manifest.webmanifest` y `vite-plugin-pwa` para:
+This app includes a `manifest.webmanifest` and uses `vite-plugin-pwa` to:
 
-- Añadir a pantalla de inicio
-- Funcionar offline (con Service Worker opcional)
-- Definir nombre, ícono y colores
+- Add to home screen
+- Work offline (optional Service Worker)
+- Define name, icon, and theme colors
 
 ---
 
-## 🧹 Linter y Formato
+## 🧹 Linting & Formatting
 
 ```bash
-npm run lint      # Detectar problemas
-npm run lint:fix  # Corregir automáticamente
-npm run format    # Formatear con Prettier
+npm run lint      # Detect problems
+npm run lint:fix  # Auto-fix issues
+npm run format    # Format code with Prettier
 ```
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-MIT License © 2025 — [Tu nombre o equipo aquí]
+MIT License © 2025
