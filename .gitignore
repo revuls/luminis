@@ -8,6 +8,10 @@ yarn-error.log*
 dist/
 build/
 
+# Temporary files
+package-lock.json
+yarn.lock
+
 # Logs
 logs/
 *.log
